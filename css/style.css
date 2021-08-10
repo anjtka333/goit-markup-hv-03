@@ -31,10 +31,9 @@ p {
   margin: 0;
   padding: 0;
 }
-/* .section .no-pudding {
-  padding-top: 0;
+.section.no-pudding {
   padding-bottom: 0;
-} */
+}
 /*container*/
 .container {
   margin-left: auto;
@@ -59,6 +58,9 @@ p {
   margin-left: auto;
   display: flex;
   align-items: center;
+}
+.header-wrapper {
+  border-bottom: 1px solid #ececec;
 }
 .site-nav {
   display: flex;
@@ -111,9 +113,12 @@ p {
 .site-nav > .link {
   color: var(--paragraf-color);
 }
-section {
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+.item-dark {
+  background-color: var(--bg-additional-color);
 }
 /* Hero */
 .hero {
@@ -182,7 +187,6 @@ section {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  background: tomato;
 }
 .list-title {
   margin-bottom: 10px;
@@ -195,7 +199,6 @@ section {
   flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  background: tomato;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -211,7 +214,6 @@ section {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background: tomato;
   border: 1px solid #eeeeee;
 }
 .list .card-item:nth-child(3n) {
@@ -236,12 +238,18 @@ section {
   margin-bottom: 20px;
 } */
 .card-container {
+  box-sizing: border-box;
   padding: 20px 24px;
 }
 .card-container-center {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.card-container-border {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .card-title {
   font-weight: 500;
