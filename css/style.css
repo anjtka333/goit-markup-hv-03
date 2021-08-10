@@ -22,11 +22,15 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 .section .no-pudding {
   padding-top: 0;
   padding-bottom: 0;
 }
+/*container*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -82,6 +86,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 .site-nav .link {
   display: block;
@@ -122,7 +127,7 @@ body {
 /* Button*/
 .button {
   color: var(--primary-text-color);
-  background-color: var(--secondary-text-color);
+  background-color: var(--bg-additional-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -131,8 +136,9 @@ body {
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 6px 22px;
   min-width: 200px;
 }
 .button:hover,
@@ -144,6 +150,7 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
+/*hero */
 .hero {
   background: var(--footer-bg-color);
 }
@@ -158,6 +165,7 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   background: tomato;
+  align-items: baseline;
 }
 .list .card-item:nth-child(3n) {
   margin-right: 0;
@@ -177,13 +185,19 @@ body {
   line-height: 1.7;
   color: var(--paragraf-color);
 }
-
+/* .card-item-img {
+  margin-bottom: 20px;
+} */
+.card-container {
+  padding: 20px 24px;
+}
 .card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 4px;
 }
 .card-p {
   font-size: 16px;
