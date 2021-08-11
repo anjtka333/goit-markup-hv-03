@@ -36,6 +36,9 @@ p {
 .section.no-pudding {
   padding-bottom: 0;
 }
+.invisible {
+  visibility: hidden;
+}
 /*container*/
 .container {
   margin-left: auto;
@@ -138,6 +141,7 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -178,18 +182,15 @@ p {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
-.button-center {
-  display: block;
-  margin: 0 auto;
-}
+
 .button-menu {
   justify-content: center;
   margin-bottom: 50px;
 }
-.button-menu li {
+
+.button-menu li:not(:last-child) {
   margin-right: 8px;
 }
-
 /*hero */
 .hero {
   background: var(--footer-bg-color);
@@ -213,8 +214,6 @@ p {
   margin-bottom: 50px;
 }
 .list .team-card-item {
-  display: flex;
-  flex-wrap: wrap;
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -232,7 +231,7 @@ p {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 .list .card-item:nth-child(3n) {
   margin-right: 0;
@@ -261,8 +260,6 @@ p {
 }
 .card-container-center {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .card-container-border {
   border-bottom: 1px solid #eeeeee;
